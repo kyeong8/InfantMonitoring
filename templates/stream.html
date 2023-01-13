@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background-image: url("https://i.pinimg.com/originals/2d/f0/57/2df057aee9050bc91a8be6ea79827bf5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      a {
+        text-decoration-line: none;
+        color: rgb(255, 255, 255);      
+      }
+    </style>
+    <div style="text-align: center;">
+      <h1><i><a href="/">Honey Monitoring</a></h1></i>
+    </div>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img src="{{url_for('stream')}}" />
+    </div>
+    <span>
+      <div style="text-align: center;">
+        <span id="clock" style="color:gray; font-size: 50px;">clock</span>
+        <span id="apm" style="color:gray; font-size: 25px;"  >ampm</span>
+      </div>
+      <ul style="list-style: none; font-size: 0.5em; color: white; margin-right: 40px; margin-top: 245px;">
+        <li>Face cover, Blanket Remove Alert Mode : {{FaceCoverBlanketRemoveState}}</li>
+        <li>Frequently Move Alert Mode : {{FrequentlyMoveState}}</li>
+        <li>Awake Alert Mode : {{AwakeState}}</li>
+      </ul>
+    </span>
+    <script>
+      var Target = document.getElementById("clock");
+      var Target_apm = document.getElementById("apm");
+      function clock() {
+          var time = new Date();
+          var hours = time.getHours();
+          var minutes = time.getMinutes();
+          var seconds = time.getSeconds();
+          var AmPm ="AM";
+          if(hours > 12){   
+              var AmPm ="PM";
+              hours %= 12;
+          }
+
+          Target.innerText = 
+          `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+          Target_apm.innerText = `${AmPm}`;
+
+      }
+      clock();
+      setInterval(clock, 1000); // 1초마다 실행
+    </script>
+  </body>
+</html>
