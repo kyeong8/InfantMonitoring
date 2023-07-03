@@ -154,7 +154,7 @@ def poseDetect(frame):
     output.Render(rgb_img)
 ```
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_pose.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_pose.PNG"/></p>
 
 ### __description__
 - 대상의 몸에서 관절이나 주요 key point를 찾아내서 대상이 뒤집혔는지, 대상이 덮고 있는 이불이나 담요가 제거되었는지 판단합니다.
@@ -284,7 +284,7 @@ def blinkDetect(frame) :
 	key = cv2.waitKey(1) & 0xFF
 ```
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_awake.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_awake.PNG"/></p>
 
 ### __description__
 - 눈을 떴는지 감았는지 판단하여 대상이 잠에서 깬 것을 확인합니다. 
@@ -421,7 +421,7 @@ def motionDetect(frameQueue) :
 ```
 
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_moving.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_moving.PNG"/></p>
 
 ### __description__
 - 대상이 자주 움직였는지 판단합니다. 
