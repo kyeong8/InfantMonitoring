@@ -60,7 +60,7 @@ def poseDetect(frame):
                     stomachCount = 0
                 else :
                     stomachCount += 1
-        if 11 in keyset or 11 in keyset or 12 in keyset or 13 in keyset or\
+        if 11 in keyset or 12 in keyset or 13 in keyset or\
             14 in  keyset or 15 in keyset or 16 in keyset:
             
             if blanketCount is 0 :
