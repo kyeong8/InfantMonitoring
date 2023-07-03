@@ -24,14 +24,14 @@
 <p align="center"><img width='80%' src="./img/Demo.png"/></p>   
 
 - Demonstration Video   
-[![Video Label](http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg)](https://youtu.be/pLjJEXWbmC0)  
-
-## __Architecture__
 <p align="center">
   <a href="https://youtu.be/pLjJEXWbmC0">
     <img src="http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg" alt="Video Label">
   </a>
 </p>
+
+## __Architecture__
+<p align="center"><img width='80%' src="./img/Architecture.png"/></p>
 
 ## __Jetson Setup__
 해당 프로젝트에서는 [Jetson Nano(Yahboom)](http://www.yahboom.net/study/jetson-nano)을 사용하였다.  
