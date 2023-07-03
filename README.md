@@ -17,11 +17,9 @@
 - FCM(Firebase Cloud Messaging)을 사용하여 앱으로 알림 전송
 
 ## __Poster__
-- - -
 <p align="center"><img width='80%' src="./img/poster.jpg"/></p>
 
 ## __Demo__
-- - -
 - Application, System Configuration, Performance Validation   
 <p align="center"><img width='80%' src="./img/Demo.png"/></p>   
 
@@ -29,7 +27,6 @@
 [![Video Label](http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg)](https://youtu.be/pLjJEXWbmC0)  
 
 ## __Architecture__
-- - -
 <p align="center"><img width='80%' src="./img/Architecture.png"/></p>
 
 ## __Jetson Setup__
@@ -78,7 +75,6 @@ $ iwconfig
 
 
 ## __Pose Detection__
-- - -
 - Pose Estimation Model은 Pose-DenseNet121-Body을 사용  
 - [dusty-nv/jeston-inference](https://github.com/dusty-nv/jetson-inference)의 poseNet을 수정해 완성했다.  
 ```python
@@ -155,7 +151,7 @@ def poseDetect(frame):
     output.Render(rgb_img)
 ```
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_pose.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_pose.PNG"/></p>
 
 ### __description__
 - 대상의 몸에서 관절이나 주요 key point를 찾아내서 대상이 뒤집혔는지, 대상이 덮고 있는 이불이나 담요가 제거되었는지 판단합니다.
@@ -171,7 +167,6 @@ def poseDetect(frame):
 - 시도는 안 해봤지만 cv2.split()를 사용해 image를 분리한 후, cv2.merge()를 이용해 image의 b,r을 변경할 수 있을 것 같다. ( [Converting_split_merge](https://zzsza.github.io/data/2018/01/23/opencv-1/) )
 
 ## __Blink Detection__
-- - -
 - [pathak-ashutosh/Eye-blink-detection](https://github.com/methylDragon/opencv-motion-detector)의 detect_blinks를 수정해 완성하였다.
 ```python
 # BlinkDetect.py
@@ -286,7 +281,7 @@ def blinkDetect(frame) :
 	key = cv2.waitKey(1) & 0xFF
 ```
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_awake.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_awake.PNG"/></p>
 
 ### __description__
 - 눈을 떴는지 감았는지 판단하여 대상이 잠에서 깬 것을 확인합니다. 
@@ -298,7 +293,6 @@ def blinkDetect(frame) :
 - 한 block의 크기를 10초로 가지는 queue에 일시적인 움직임이 있었는지를 나타내는 flag 값들을 하나씩 저장하는데 3개의 연속적인 움직임이 있었다면 최종적으로 대상이 자주 움직인다고 판단합니다.
 
 ## __Motion Detection__
-- - -
 [dmethylDragon/opencv-motion-detecto](https://github.com/methylDragon/opencv-motion-detector)의 Motion Detector 수정해 완성하였다.
 ```python
 # Motion Detection.py
@@ -424,7 +418,7 @@ def motionDetect(frameQueue) :
 ```
 
 ### __flow chart__
-<p align="center"><img width='50%' src="./img/flowchart_moving.png"/></p>
+<p align="center"><img width='50%' src="./img/flowchart_moving.PNG"/></p>
 
 ### __description__
 - 대상이 자주 움직였는지 판단합니다. 
