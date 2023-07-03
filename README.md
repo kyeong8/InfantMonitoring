@@ -1,5 +1,5 @@
 # __InfantMornitoring__
-2022년도 2학기 참빛설계
+2022년도 2학기 참빛설계학기
 
 ## __Title__
 - 영아 모니터링 및 SIDS 방지를 위한 모바일 어플리케이션 개발
@@ -17,11 +17,9 @@
 - FCM(Firebase Cloud Messaging)을 사용하여 앱으로 알림 전송
 
 ## __Poster__
-- - -
 <p align="center"><img width='80%' src="./img/poster.jpg"/></p>
 
 ## __Demo__
-- - -
 - Application, System Configuration, Performance Validation   
 <p align="center"><img width='80%' src="./img/Demo.png"/></p>   
 
@@ -29,11 +27,13 @@
 [![Video Label](http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg)](https://youtu.be/pLjJEXWbmC0)  
 
 ## __Architecture__
-- - -
-<p align="center"><img width='80%' src="./img/Architecture.png"/></p>
+<p align="center">
+  <a href="https://youtu.be/pLjJEXWbmC0">
+    <img src="http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg" alt="Video Label">
+  </a>
+</p>
 
 ## __Jetson Setup__
-- - -
 해당 프로젝트에서는 [Jetson Nano(Yahboom)](http://www.yahboom.net/study/jetson-nano)을 사용하였다.  
 Jetson Nano(Yahboom) Micro SD 슬롯이 없고 16GB eMMC로 구동하기 때문에 저장공간 문제를 해결하기 위해 USB를 통한 booting 추천한다.  
 Yahboom에서 제공하는 [Udisk System file](https://drive.google.com/drive/folders/1bNPN5zVxBnZNFa2-vDwwci_jUaDIo7G9)에는 jetpack 4.4.1이 기본적으로 설치되어 있고, 다른 라이브러리는 해당 링크에서 "NanoB01-64g20221104--ReadMe.txt"를 참고하길 바란다.
@@ -78,7 +78,6 @@ $ iwconfig
 
 
 ## __Pose Detection__
-- - -
 - Pose Estimation Model은 Pose-DenseNet121-Body을 사용  
 - [dusty-nv/jeston-inference](https://github.com/dusty-nv/jetson-inference)의 poseNet을 수정해 완성했다.  
 ```python
@@ -171,7 +170,6 @@ def poseDetect(frame):
 - 시도는 안 해봤지만 cv2.split()를 사용해 image를 분리한 후, cv2.merge()를 이용해 image의 b,r을 변경할 수 있을 것 같다. ( [Converting_split_merge](https://zzsza.github.io/data/2018/01/23/opencv-1/) )
 
 ## __Blink Detection__
-- - -
 - [pathak-ashutosh/Eye-blink-detection](https://github.com/pathak-ashutosh/Eye-blink-detection)의 detect_blinks를 수정해 완성하였다.
 ```python
 # BlinkDetect.py
@@ -298,8 +296,7 @@ def blinkDetect(frame) :
 - 한 block의 크기를 10초로 가지는 queue에 일시적인 움직임이 있었는지를 나타내는 flag 값들을 하나씩 저장하는데 3개의 연속적인 움직임이 있었다면 최종적으로 대상이 자주 움직인다고 판단합니다.
 
 ## __Motion Detection__
-- - -
-[dmethylDragon/opencv-motion-detector](https://github.com/methylDragon/opencv-motion-detector)의 Motion Detector 수정해 완성하였다.
+[dmethylDragon/opencv-motion-detector](https://github.com/methylDragon/opencv-motion-detector)의 Motion Detector를 수정해 완성하였다.
 ```python
 # Motion Detection.py
 
