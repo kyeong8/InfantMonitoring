@@ -172,7 +172,7 @@ def poseDetect(frame):
 
 ## __Blink Detection__
 - - -
-- [pathak-ashutosh/Eye-blink-detection](https://github.com/methylDragon/opencv-motion-detector)의 detect_blinks를 수정해 완성하였다.
+- [pathak-ashutosh/Eye-blink-detection](https://github.com/pathak-ashutosh/Eye-blink-detection)의 detect_blinks를 수정해 완성하였다.
 ```python
 # BlinkDetect.py
 from scipy.spatial import distance as dist
@@ -299,7 +299,7 @@ def blinkDetect(frame) :
 
 ## __Motion Detection__
 - - -
-[dmethylDragon/opencv-motion-detecto](https://github.com/methylDragon/opencv-motion-detector)의 Motion Detector 수정해 완성하였다.
+[dmethylDragon/opencv-motion-detector](https://github.com/methylDragon/opencv-motion-detector)의 Motion Detector 수정해 완성하였다.
 ```python
 # Motion Detection.py
 
