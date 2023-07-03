@@ -1,5 +1,5 @@
 # __InfantMornitoring__
-2022년도 2학기 참빛설계
+2022년도 2학기 참빛설계학기
 
 ## __Title__
 - 영아 모니터링 및 SIDS 방지를 위한 모바일 어플리케이션 개발
@@ -24,7 +24,11 @@
 <p align="center"><img width='80%' src="./img/Demo.png"/></p>   
 
 - Demonstration Video   
-[![Video Label](http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg)](https://youtu.be/pLjJEXWbmC0)  
+<p align="center">
+  <a href="https://youtu.be/pLjJEXWbmC0">
+    <img src="http://img.youtube.com/vi/pLjJEXWbmC0/0.jpg" alt="Video Label">
+  </a>
+</p> 
 
 ## __Architecture__
 <p align="center"><img width='80%' src="./img/Architecture.png"/></p>
