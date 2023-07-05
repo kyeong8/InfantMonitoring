@@ -58,7 +58,7 @@ $ sudo reboot
 $ jtop
 ```
 - Wi-Fi Driver install(Wi-Fi Adapter를 사용할 경우에만)  
-해당 프로젝트에서는 포트포워딩을 위해 WRL-15449 Edimax 2-in-1 WiFi and Bluetooth 4.0 Adapter를 사용하였음.  
+해당 프로젝트에서는 포트포워딩을 위해 WRL-15449 Edimax 2-in-1 WiFi and Bluetooth 4.0 Adapter를 사용하였다.  
 [EW-7611ULB(Edimax)](https://www.edimax.com/edimax/download/download/data/edimax/global/download/bluetooth/ew-7611ulb)에서 "EW-7611ULB Linux Wi-Fi Driver"를 설치 (Bluetooth 겸용이지만 Linux에서는 Wi-Fi만 작동)
 ```sh
 $ sudo apt-get install git build-essential
